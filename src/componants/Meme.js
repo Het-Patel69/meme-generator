@@ -23,7 +23,6 @@ export default function Meme() {
             {
                 ...oldMeme,
                 randomImage: url
-
             }))
     }
 
