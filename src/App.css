@@ -7,14 +7,14 @@ body {
   margin: 0;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
 }
 
 main {
   padding: 36px;
-  max-width: 1000px;
+  max-width: 700px;
   align-self: center;
 }
 
@@ -68,6 +68,7 @@ main {
 }
 
 .meme {
+  min-height: 200px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,15 +93,15 @@ main {
   color: white;
   letter-spacing: 1px;
   text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
 }
 
 .bottom {
@@ -109,4 +110,21 @@ main {
 
 .top {
   top: 0;
+}
+
+.button_download {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_download:disabled {
+  background: linear-gradient(90.41deg, hsl(285, 4%, 34%) 1.14%, hsl(285, 0%, 47%) 100%);
+  cursor: not-allowed;
 }
